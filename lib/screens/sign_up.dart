@@ -46,7 +46,7 @@ class _MyAopState extends State<MyAop> {
                       decoration: const InputDecoration(
                         labelText: 'Email',
                         hintText: 'Enter email',
-                        prefixIcon: Icon(Icons.account_circle),
+                        prefixIcon: Icon(Icons.email),
                         border: OutlineInputBorder(),
                       ),
                       onChanged: (String value) {},
