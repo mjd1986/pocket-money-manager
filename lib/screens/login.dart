@@ -38,9 +38,18 @@ class _MyAopState extends State<MyAop> {
                     decoration InputDecoration(
                       lableText: 'Username'
                       hintText: 'Enter username'
-                      
+                      prefixIcon: Icon(Icons.account_circle),
+                      border: OutlineInputBorder(),
+
                     ),
+                    onChanged: (String value) {
+                      
+                    },
+                    validator: (value) {
+                      return value!.isEmpty? 'Please enter username' : null;
+                    }
                   ),
+                  
 
                 ],
               ),
