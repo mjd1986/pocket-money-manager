@@ -29,6 +29,7 @@ class _MyAopState extends State<MyAop> {
                 fontWeight: FontWeight.bold
               ),
             ),
+            SizeBox(height: 30,),
             Form(
               child: Column(
                 children: [
@@ -49,8 +50,12 @@ class _MyAopState extends State<MyAop> {
                       return value!.isEmpty? 'Please enter username' : null;
                     }
                   ),
-                 
-                  TextFormField(
+                  SizeBox(height: 30,),
+
+
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal:15),
+                    child:TextFormField(
                     keyboardType: TextInputType.visiblePassword,
                     decoration InputDecoration(
                       lableText: 'Password'
@@ -59,6 +64,8 @@ class _MyAopState extends State<MyAop> {
                       border: OutlineInputBorder(),
 
                     ),
+                  ),
+                  
                     onChanged: (String value) {
                       
                     },
@@ -66,7 +73,17 @@ class _MyAopState extends State<MyAop> {
                       return value!.isEmpty? 'Please enter password' : null;
                     }
                   ),
-
+                  SizeBox(height: 30,),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal:35),
+                    child:  MaterialButton(
+                    minWidth: Double.infinity,
+                    onPressed: () {},
+                    child: Test('Login'),
+                    color: Color.black38,
+                    textColor: Colors.black,
+                    ),
+                  ),
                 ],
               ),
             ),
