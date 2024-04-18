@@ -91,7 +91,7 @@ class _MyAopState extends State<MyAop> {
                   ),
                   SizedBox(height: 100,),
                   Text(
-              "don't have an acount sign up",
+              "don't have an acount",
               style: TextStyle(
                 fontSize: 15,
                 color: Colors.grey[900],
