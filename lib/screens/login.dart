@@ -15,13 +15,13 @@ class _MyAopState extends State<MyAop> {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Pocket Money Manager')
+          title: const Text('Pocket Money Manager')
         ),
         body: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Text(
+            const Text(
               'login',
               style: TextStyle(
                 fontSize: 35,
@@ -36,7 +36,7 @@ class _MyAopState extends State<MyAop> {
 
                   TextFormField(
                     keyboardType: TextInputType.name,
-                    decoration InputDecoration(
+                    decoration const InputDecoration(
                       lableText: 'Username'
                       hintText: 'Enter username'
                       prefixIcon: Icon(Icons.account_circle),
@@ -57,7 +57,7 @@ class _MyAopState extends State<MyAop> {
                     padding: const EdgeInsets.symmetric(horizontal:15),
                     child:TextFormField(
                     keyboardType: TextInputType.visiblePassword,
-                    decoration InputDecoration(
+                    decoration const InputDecoration(
                       lableText: 'Password'
                       hintText: 'Enter password'
                       prefixIcon: Icon(Icons.password),
