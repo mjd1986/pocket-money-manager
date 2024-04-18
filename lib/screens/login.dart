@@ -49,7 +49,23 @@ class _MyAopState extends State<MyAop> {
                       return value!.isEmpty? 'Please enter username' : null;
                     }
                   ),
-                  
+                 
+                  TextFormField(
+                    keyboardType: TextInputType.visiblePassword,
+                    decoration InputDecoration(
+                      lableText: 'Password'
+                      hintText: 'Enter password'
+                      prefixIcon: Icon(Icons.password),
+                      border: OutlineInputBorder(),
+
+                    ),
+                    onChanged: (String value) {
+                      
+                    },
+                    validator: (value) {
+                      return value!.isEmpty? 'Please enter password' : null;
+                    }
+                  ),
 
                 ],
               ),
