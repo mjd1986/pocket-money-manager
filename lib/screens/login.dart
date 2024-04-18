@@ -89,6 +89,31 @@ class _MyAopState extends State<MyAop> {
                     textColor: Colors.black,
                     ),
                   ),
+                  SizedBox(height: 100,),
+                  Text(
+              "don't have an acount sign up",
+              style: TextStyle(
+                fontSize: 15,
+                color: Colors.grey[900],
+                
+              ),
+            ),
+                  SizedBox(height: 100,),
+                  
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal:100),
+                    child:  MaterialButton(
+                    minWidth: double.infinity,
+                    onPressed: () {},
+                    child: Text('sign up',
+                    style: TextStyle(fontSize: 15,),
+                    ),
+                    color: Colors.grey[300],
+                    textColor: Colors.black,
+                    
+                    
+                    ),
+                  ),    
                 ],
               ),
             ),
