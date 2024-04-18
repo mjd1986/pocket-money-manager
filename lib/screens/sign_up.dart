@@ -1,13 +1,11 @@
 import 'package:flutter/material.dart';
 
 class MyAop extends StatefulWidget {
-  const MyAop({Key? key}) : super(key: key);
+  const MyAop({super.key});
 
-
- @override
- _MyAopState createState() => _MyAopState();
+  @override
+  _MyAopState createState() => _MyAopState();
 }
-
 
 class _MyAopState extends State<MyAop> {
   @override
@@ -15,31 +13,113 @@ class _MyAopState extends State<MyAop> {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
+<<<<<<< HEAD
+          prefixIcon: const Icon(Icons.arrow_circle_left_sharp),
+          title: const Text('Pocket Money Manager'),
+=======
           leading: Icon(Icons.menu),
           actions: [
           IconButton(onPressed: () => {}, icon: Icon(Icons.arrow_circle_left_sharp)),
         ],
           title: Text('Pocket Money Manager'),
            
+>>>>>>> 0e223b74d9d8540ae28e17ca0bd36ee6208f0213
         ),
         body: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Text(
+            const Text(
               'login',
               style: TextStyle(
-                fontSize: 35,
-                color: Colors.black,
-                fontWeight: FontWeight.bold
-              ),
+                  fontSize: 35,
+                  color: Colors.black,
+                  fontWeight: FontWeight.bold),
             ),
-            SizedBox(height: 30,),
+            const SizedBox(
+              height: 30,
+            ),
             Form(
               child: Column(
                 children: [
-
                   Padding(
+<<<<<<< HEAD
+                    padding: const EdgeInsets.symmetric(horizontal: 15),
+                    child: TextFormField(
+                      keyboardType: TextInputType.visiblePassword,
+                      decoration: const InputDecoration(
+                        labelText: 'Username',
+                        hintText: 'Enter username',
+                        prefixIcon: Icon(Icons.account_circle),
+                        border: OutlineInputBorder(),
+                      ),
+                      onChanged: (String value) {},
+                      validator: (value) {
+                        return value!.isEmpty ? 'Please enter username' : null;
+                      },
+                    ),
+                  ),
+                  const SizedBox(
+                    height: 30,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 15),
+                    child: TextFormField(
+                      keyboardType: TextInputType.visiblePassword,
+                      decoration: const InputDecoration(
+                        labelText: 'Password',
+                        hintText: 'Enter password',
+                        prefixIcon: Icon(Icons.password),
+                        border: OutlineInputBorder(),
+                      ),
+                      onChanged: (String value) {},
+                      validator: (value) {
+                        return value!.isEmpty ? 'Please enter password' : null;
+                      },
+                    ),
+                  ),
+                  const SizedBox(
+                    height: 30,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 35),
+                    child: MaterialButton(
+                      minWidth: double.infinity,
+                      onPressed: () {},
+                      color: Colors.grey[300],
+                      textColor: Colors.black,
+                      child: const Text('Login'),
+                    ),
+                  ),
+                  const SizedBox(
+                    height: 100,
+                  ),
+                  Text(
+                    "don't have an acount",
+                    style: TextStyle(
+                      fontSize: 15,
+                      color: Colors.grey[900],
+                    ),
+                  ),
+                  const SizedBox(
+                    height: 100,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 100),
+                    child: MaterialButton(
+                      minWidth: double.infinity,
+                      onPressed: () {},
+                      color: Colors.grey[300],
+                      textColor: Colors.black,
+                      child: const Text(
+                        'sign up',
+                        style: TextStyle(
+                          fontSize: 15,
+                        ),
+                      ),
+                    ),
+                  ),
+=======
                     padding: const EdgeInsets.symmetric(horizontal:15),
                     child:TextFormField(
                     keyboardType: TextInputType.visiblePassword,
@@ -59,14 +139,14 @@ class _MyAopState extends State<MyAop> {
                     },
                   ),
                   ),
-                  SizedBox(height: 30,),
+                  const SizedBox(height: 30,),
 
 
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal:15),
                     child:TextFormField(
                     keyboardType: TextInputType.visiblePassword,
-                    decoration: InputDecoration(
+                    decoration: const InputDecoration(
                       labelText: 'Password',
                       hintText: 'Enter password',
                       prefixIcon: Icon(Icons.password),
@@ -83,25 +163,25 @@ class _MyAopState extends State<MyAop> {
                     },
                   ),
                   ),
-                  SizedBox(height: 30,),
+                  const SizedBox(height: 30,),
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal:35),
                     child:  MaterialButton(
                     minWidth: double.infinity,
                     onPressed: () {},
-                    child: Text('sign up'),
                     color: Colors.grey[300],
                     textColor: Colors.black,
+                    child: const Text('sign up'),
                     ),
                   ),
                   
+>>>>>>> 0e223b74d9d8540ae28e17ca0bd36ee6208f0213
                 ],
               ),
             ),
-
           ],
         ),
       ),
-     );
+    )
   }
 }

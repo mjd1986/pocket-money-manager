@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class MyAop extends StatefulWidget {
-  const MyAop({Key? key}) : super(key: key);
+  const MyAop({super.key});
 
 
  @override
@@ -15,13 +15,13 @@ class _MyAopState extends State<MyAop> {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Pocket Money Manager')
+          title: const Text('Pocket Money Manager')
         ),
         body: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Text(
+            const Text(
               'login',
               style: TextStyle(
                 fontSize: 35,
@@ -29,7 +29,7 @@ class _MyAopState extends State<MyAop> {
                 fontWeight: FontWeight.bold
               ),
             ),
-            SizedBox(height: 30,),
+            const SizedBox(height: 30,),
             Form(
               child: Column(
                 children: [
@@ -38,7 +38,7 @@ class _MyAopState extends State<MyAop> {
                     padding: const EdgeInsets.symmetric(horizontal:15),
                     child:TextFormField(
                     keyboardType: TextInputType.visiblePassword,
-                    decoration: InputDecoration(
+                    decoration: const InputDecoration(
                       labelText: 'Username',
                       hintText: 'Enter username',
                       prefixIcon: Icon(Icons.account_circle),
@@ -54,14 +54,14 @@ class _MyAopState extends State<MyAop> {
                     },
                   ),
                   ),
-                  SizedBox(height: 30,),
+                  const SizedBox(height: 30,),
 
 
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal:15),
                     child:TextFormField(
                     keyboardType: TextInputType.visiblePassword,
-                    decoration: InputDecoration(
+                    decoration: const InputDecoration(
                       labelText: 'Password',
                       hintText: 'Enter password',
                       prefixIcon: Icon(Icons.password),
@@ -78,18 +78,18 @@ class _MyAopState extends State<MyAop> {
                     },
                   ),
                   ),
-                  SizedBox(height: 30,),
+                  const SizedBox(height: 30,),
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal:35),
                     child:  MaterialButton(
                     minWidth: double.infinity,
                     onPressed: () {},
-                    child: Text('Login'),
                     color: Colors.grey[300],
                     textColor: Colors.black,
+                    child: const Text('Login'),
                     ),
                   ),
-                  SizedBox(height: 100,),
+                  const SizedBox(height: 100,),
                   Text(
               "don't have an acount",
               style: TextStyle(
@@ -98,18 +98,18 @@ class _MyAopState extends State<MyAop> {
                 
               ),
             ),
-                  SizedBox(height: 100,),
+                  const SizedBox(height: 100,),
                   
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal:100),
                     child:  MaterialButton(
                     minWidth: double.infinity,
                     onPressed: () {},
-                    child: Text('sign up',
-                    style: TextStyle(fontSize: 15,),
-                    ),
                     color: Colors.grey[300],
                     textColor: Colors.black,
+                    child: const Text('sign up',
+                    style: TextStyle(fontSize: 15,),
+                    ),
                     
                     
                     ),
