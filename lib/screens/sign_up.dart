@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class MyAop extends StatefulWidget {
-  const MyAop({Key? key}) : super(key: key);
+  const MyAop({super.key});
 
   @override
   _MyAopState createState() => _MyAopState();
@@ -14,8 +14,8 @@ class _MyAopState extends State<MyAop> {
       home: Scaffold(
         appBar: AppBar(
 <<<<<<< HEAD
-          prefixIcon: Icon(Icons.arrow_circle_left_sharp),
-          title: Text('Pocket Money Manager'),
+          prefixIcon: const Icon(Icons.arrow_circle_left_sharp),
+          title: const Text('Pocket Money Manager'),
 =======
           leading: Icon(Icons.menu),
           actions: [
@@ -29,14 +29,14 @@ class _MyAopState extends State<MyAop> {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Text(
+            const Text(
               'login',
               style: TextStyle(
                   fontSize: 35,
                   color: Colors.black,
                   fontWeight: FontWeight.bold),
             ),
-            SizedBox(
+            const SizedBox(
               height: 30,
             ),
             Form(
@@ -47,7 +47,7 @@ class _MyAopState extends State<MyAop> {
                     padding: const EdgeInsets.symmetric(horizontal: 15),
                     child: TextFormField(
                       keyboardType: TextInputType.visiblePassword,
-                      decoration: InputDecoration(
+                      decoration: const InputDecoration(
                         labelText: 'Username',
                         hintText: 'Enter username',
                         prefixIcon: Icon(Icons.account_circle),
@@ -59,14 +59,14 @@ class _MyAopState extends State<MyAop> {
                       },
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 30,
                   ),
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 15),
                     child: TextFormField(
                       keyboardType: TextInputType.visiblePassword,
-                      decoration: InputDecoration(
+                      decoration: const InputDecoration(
                         labelText: 'Password',
                         hintText: 'Enter password',
                         prefixIcon: Icon(Icons.password),
@@ -78,7 +78,7 @@ class _MyAopState extends State<MyAop> {
                       },
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 30,
                   ),
                   Padding(
@@ -86,12 +86,12 @@ class _MyAopState extends State<MyAop> {
                     child: MaterialButton(
                       minWidth: double.infinity,
                       onPressed: () {},
-                      child: Text('Login'),
                       color: Colors.grey[300],
                       textColor: Colors.black,
+                      child: const Text('Login'),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 100,
                   ),
                   Text(
@@ -101,7 +101,7 @@ class _MyAopState extends State<MyAop> {
                       color: Colors.grey[900],
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 100,
                   ),
                   Padding(
@@ -109,14 +109,14 @@ class _MyAopState extends State<MyAop> {
                     child: MaterialButton(
                       minWidth: double.infinity,
                       onPressed: () {},
-                      child: Text(
+                      color: Colors.grey[300],
+                      textColor: Colors.black,
+                      child: const Text(
                         'sign up',
                         style: TextStyle(
                           fontSize: 15,
                         ),
                       ),
-                      color: Colors.grey[300],
-                      textColor: Colors.black,
                     ),
                   ),
 =======
@@ -139,14 +139,14 @@ class _MyAopState extends State<MyAop> {
                     },
                   ),
                   ),
-                  SizedBox(height: 30,),
+                  const SizedBox(height: 30,),
 
 
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal:15),
                     child:TextFormField(
                     keyboardType: TextInputType.visiblePassword,
-                    decoration: InputDecoration(
+                    decoration: const InputDecoration(
                       labelText: 'Password',
                       hintText: 'Enter password',
                       prefixIcon: Icon(Icons.password),
@@ -163,15 +163,15 @@ class _MyAopState extends State<MyAop> {
                     },
                   ),
                   ),
-                  SizedBox(height: 30,),
+                  const SizedBox(height: 30,),
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal:35),
                     child:  MaterialButton(
                     minWidth: double.infinity,
                     onPressed: () {},
-                    child: Text('sign up'),
                     color: Colors.grey[300],
                     textColor: Colors.black,
+                    child: const Text('sign up'),
                     ),
                   ),
                   
@@ -182,6 +182,6 @@ class _MyAopState extends State<MyAop> {
           ],
         ),
       ),
-    );
+    )
   }
 }
