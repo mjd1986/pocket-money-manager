@@ -62,8 +62,8 @@ class _MyAopState extends State<MyAop> {
                     child:TextFormField(
                     keyboardType: TextInputType.visiblePassword,
                     decoration: InputDecoration(
-                      labelText: 'Password'
-                      hintText: 'Enter password'
+                      labelText: 'Password',
+                      hintText: 'Enter password',
                       prefixIcon: Icon(Icons.password),
                       border: OutlineInputBorder(),
 
@@ -96,5 +96,6 @@ class _MyAopState extends State<MyAop> {
           ],
         ),
       ),
-    );
+     );
+  }
 }
