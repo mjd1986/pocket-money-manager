@@ -1,41 +1,129 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(const MyApp());
+void main() => runApp(const MyAop());
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-  // This widget is the root of your application.
+class MyAop extends StatefulWidget {
+  const MyAop({Key? key}) : super(key: key);
+
+  @override
+  _MyAopState createState() => _MyAopState();
+}
+
+class _MyAopState extends State<MyAop> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      // Application name
-      title: 'Flutter Hello World',
-      // Application theme data, you can set the colors for the application as
-      // you want
-      theme: ThemeData(
-        // useMaterial3: false,
-        primarySwatch: Colors.blue,
-      ),
-      // A widget which will be started on application startup
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
-    );
-  }
-}
-
-class MyHomePage extends StatelessWidget {
-  final String title;
-  const MyHomePage({super.key, required this.title});  
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        // The title text which will be shown on the action bar
-        title: Text(title),
-      ),
-      body: const Center(
-        child: Text(
-          'Hello, World!',
+      home: Scaffold(
+        appBar: AppBar(title: Text('Pocket Money Manager')),
+        body: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Text(
+              'login',
+              style: TextStyle(
+                  fontSize: 35,
+                  color: Colors.black,
+                  fontWeight: FontWeight.bold),
+            ),
+            SizedBox(
+              height: 30,
+            ),
+            Form(
+              child: Column(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 15),
+                    child: TextFormField(
+                      keyboardType: TextInputType.visiblePassword,
+                      decoration: InputDecoration(
+                        labelText: 'Username',
+                        hintText: 'Enter username',
+                        prefixIcon: Icon(Icons.account_circle),
+                        border: OutlineInputBorder(),
+                      ),
+                      onChanged: (String value) {},
+                      validator: (value) {
+                        return value!.isEmpty ? 'Please enter username' : null;
+                      },
+                    ),
+                  ),
+                  SizedBox(
+                    height: 30,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 15),
+                    child: TextFormField(
+                      keyboardType: TextInputType.visiblePassword,
+                      decoration: InputDecoration(
+                        labelText: 'Password',
+                        hintText: 'Enter password',
+                        prefixIcon: Icon(Icons.password),
+                        border: OutlineInputBorder(),
+                      ),
+                      onChanged: (String value) {},
+                      validator: (value) {
+                        return value!.isEmpty ? 'Please enter password' : null;
+                      },
+                    ),
+                  ),
+                  SizedBox(
+                    height: 30,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 35),
+                    child: MaterialButton(
+                      minWidth: double.infinity,
+                      onPressed: () {},
+                      child: Text('Login'),
+                      color: Colors.grey[300],
+                      textColor: Colors.black,
+                    ),
+                  ),
+                  SizedBox(height: 10),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 35),
+                    child: MaterialButton(
+                      minWidth: double.infinity,
+                      onPressed: () {},
+                      child: Text('forgot pasword',
+                          style: TextStyle(fontSize: 15)),
+                      color: Colors.grey[300],
+                      textColor: Colors.black,
+                    ),
+                  ),
+                  SizedBox(
+                    height: 100,
+                  ),
+                  Text(
+                    "don't have an acount",
+                    style: TextStyle(
+                      fontSize: 15,
+                      color: Colors.grey[900],
+                    ),
+                  ),
+                  SizedBox(
+                    height: 100,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 100),
+                    child: MaterialButton(
+                      minWidth: double.infinity,
+                      onPressed: () {},
+                      child: Text(
+                        'sign up',
+                        style: TextStyle(
+                          fontSize: 15,
+                        ),
+                      ),
+                      color: Colors.grey[300],
+                      textColor: Colors.black,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ],
         ),
       ),
     );
