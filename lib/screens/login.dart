@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-class MyAop extends Statefulwidget {
+class MyAop extends StatefulWidget {
   const MyAop({Key? key}) : super(key: key);
 
 
- @overriDeprecated
+ @override
  _MyAopState createState() => _MyAopState();
 }
 
@@ -15,13 +15,13 @@ class _MyAopState extends State<MyAop> {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Pocket Money Manager')
+          title: Text('Pocket Money Manager')
         ),
         body: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            const Text(
+            Text(
               'login',
               style: TextStyle(
                 fontSize: 35,
@@ -34,15 +34,18 @@ class _MyAopState extends State<MyAop> {
               child: Column(
                 children: [
 
-                  TextFormField(
-                    keyboardType: TextInputType.name,
-                    decoration const InputDecoration(
+                   Padding(
+                    padding: const EdgeInsets.symmetric(horizontal:15),
+                    child:TextFormField(
+                    keyboardType: TextInputType.visiblePassword,
+                    decoration InputDecoration(
                       lableText: 'Username'
                       hintText: 'Enter username'
                       prefixIcon: Icon(Icons.account_circle),
                       border: OutlineInputBorder(),
 
                     ),
+                  ),
                     onChanged: (String value) {
                       
                     },
@@ -57,7 +60,7 @@ class _MyAopState extends State<MyAop> {
                     padding: const EdgeInsets.symmetric(horizontal:15),
                     child:TextFormField(
                     keyboardType: TextInputType.visiblePassword,
-                    decoration const InputDecoration(
+                    decoration InputDecoration(
                       lableText: 'Password'
                       hintText: 'Enter password'
                       prefixIcon: Icon(Icons.password),
