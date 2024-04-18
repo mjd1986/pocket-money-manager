@@ -29,61 +29,63 @@ class _MyAopState extends State<MyAop> {
                 fontWeight: FontWeight.bold
               ),
             ),
-            SizeBox(height: 30,),
+            SizedBox(height: 30,),
             Form(
               child: Column(
                 children: [
 
-                   Padding(
+                  Padding(
                     padding: const EdgeInsets.symmetric(horizontal:15),
                     child:TextFormField(
                     keyboardType: TextInputType.visiblePassword,
-                    decoration InputDecoration(
-                      lableText: 'Username'
-                      hintText: 'Enter username'
+                    decoration: InputDecoration(
+                      labelText: 'Username',
+                      hintText: 'Enter username',
                       prefixIcon: Icon(Icons.account_circle),
                       border: OutlineInputBorder(),
 
+                    
                     ),
-                  ),
                     onChanged: (String value) {
                       
                     },
                     validator: (value) {
                       return value!.isEmpty? 'Please enter username' : null;
-                    }
+                    },
                   ),
-                  SizeBox(height: 30,),
+                  ),
+                  SizedBox(height: 30,),
 
 
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal:15),
                     child:TextFormField(
                     keyboardType: TextInputType.visiblePassword,
-                    decoration InputDecoration(
-                      lableText: 'Password'
+                    decoration: InputDecoration(
+                      labelText: 'Password'
                       hintText: 'Enter password'
                       prefixIcon: Icon(Icons.password),
                       border: OutlineInputBorder(),
 
                     ),
-                  ),
+                  
                   
                     onChanged: (String value) {
                       
                     },
                     validator: (value) {
                       return value!.isEmpty? 'Please enter password' : null;
-                    }
+                    },
                   ),
-                  SizeBox(height: 30,),
+                  ),
+                  SizedBox(height: 30,),
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal:35),
                     child:  MaterialButton(
-                    minWidth: Double.infinity,
+                    minWidth: double.infinity,
                     onPressed: () {},
-                    child: Test('Login'),
-                    color: Color.black38,
+                    child: Text('Login'),
+                    color: Colors.grey[300],
                     textColor: Colors.black,
                     ),
                   ),
