@@ -15,8 +15,12 @@ class _MyAopState extends State<MyAop> {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          prefixIcon: Icon (Icons.arrow_circle_left_sharp)
-          title: Text('Pocket Money Manager')
+          leading: Icon(Icons.menu),
+          actions: [
+          IconButton(onPressed: () => {}, icon: Icon(Icons.arrow_circle_left_sharp)),
+        ],
+          title: Text('Pocket Money Manager'),
+           
         ),
         body: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -85,36 +89,12 @@ class _MyAopState extends State<MyAop> {
                     child:  MaterialButton(
                     minWidth: double.infinity,
                     onPressed: () {},
-                    child: Text('Login'),
+                    child: Text('sign up'),
                     color: Colors.grey[300],
                     textColor: Colors.black,
                     ),
                   ),
-                  SizedBox(height: 100,),
-                  Text(
-              "don't have an acount",
-              style: TextStyle(
-                fontSize: 15,
-                color: Colors.grey[900],
-                
-              ),
-            ),
-                  SizedBox(height: 100,),
                   
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal:100),
-                    child:  MaterialButton(
-                    minWidth: double.infinity,
-                    onPressed: () {},
-                    child: Text('sign up',
-                    style: TextStyle(fontSize: 15,),
-                    ),
-                    color: Colors.grey[300],
-                    textColor: Colors.black,
-                    
-                    
-                    ),
-                  ),    
                 ],
               ),
             ),
