@@ -89,6 +89,21 @@ class _MyAopState extends State<MyAop> {
                     textColor: Colors.black,
                     ),
                   ),
+                  SizedBox(height:10),
+                    Padding(
+                    padding: const EdgeInsets.symmetric(horizontal:35),
+                    child:  MaterialButton(
+                    minWidth: double.infinity,
+                    onPressed: () {},
+                    child: Text('forgot pasword',
+                    style: TextStyle(
+                      fontSize:15
+                    )),
+                    color: Colors.grey[300],
+                    textColor: Colors.black,
+                    ),
+                  ),
+                 
                   SizedBox(height: 100,),
                   Text(
               "don't have an acount",
