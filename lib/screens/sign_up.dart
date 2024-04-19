@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
 
-class MyAo extends StatefulWidget {
-  const MyAo({super.key});
+class SignUp extends StatefulWidget {
+  const SignUp({super.key});
 
   @override
-  _MyAopState createState() => _MyAopState();
+  _MyAoState createState() => _MyAoState();
 }
 
-class _MyAopState extends State<MyAo> {
+class _MyAoState extends State<SignUp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          leading: Icon(Icons.menu),
+          leading: Icon(Icons.arrow_circle_left_sharp),
           actions: [
             IconButton(
                 onPressed: () => {}, icon: Icon(Icons.arrow_circle_left_sharp)),
@@ -101,35 +101,7 @@ class _MyAopState extends State<MyAo> {
                       onPressed: () {},
                       color: Colors.grey[300],
                       textColor: Colors.black,
-                      child: const Text('Login'),
-                    ),
-                  ),
-                  const SizedBox(
-                    height: 100,
-                  ),
-                  Text(
-                    "don't have an acount",
-                    style: TextStyle(
-                      fontSize: 15,
-                      color: Colors.grey[900],
-                    ),
-                  ),
-                  const SizedBox(
-                    height: 100,
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 100),
-                    child: MaterialButton(
-                      minWidth: double.infinity,
-                      onPressed: () {},
-                      color: Colors.grey[300],
-                      textColor: Colors.black,
-                      child: const Text(
-                        'sign up',
-                        style: TextStyle(
-                          fontSize: 15,
-                        ),
-                      ),
+                      child: const Text('Sign Up'),
                     ),
                   ),
                 ],

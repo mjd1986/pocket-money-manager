@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:pocket_money_manager/screens/sign_up.dart';
 
-class MyAop extends StatefulWidget {
-  const MyAop({Key? key}) : super(key: key);
+class Login extends StatefulWidget {
+  const Login({Key? key}) : super(key: key);
 
   @override
   _MyAopState createState() => _MyAopState();
 }
 
-class _MyAopState extends State<MyAop> {
+class _MyAopState extends State<Login> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -72,7 +73,14 @@ class _MyAopState extends State<MyAop> {
                     padding: const EdgeInsets.symmetric(horizontal: 35),
                     child: MaterialButton(
                       minWidth: double.infinity,
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const SignUp(),
+                          ),
+                        );
+                      },
                       child: Text('Login'),
                       color: Colors.grey[300],
                       textColor: Colors.black,
