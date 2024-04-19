@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pocket_money_manager/screens/sign_up.dart';
+import 'package:pocket_money_manager/screens/forgot_pasword.dart';
 
 class Login extends StatefulWidget {
   const Login({Key? key}) : super(key: key);
@@ -74,25 +75,33 @@ class _MyAopState extends State<Login> {
                     child: MaterialButton(
                       minWidth: double.infinity,
                       onPressed: () {},
-                      child: Text('Login'),
+                      child:
+                          Text('Login', style: const TextStyle(fontSize: 20)),
                       color: Colors.grey[300],
                       textColor: Colors.black,
                     ),
                   ),
                   SizedBox(height: 10),
                   Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 35),
+                    padding: const EdgeInsets.symmetric(horizontal: 100),
                     child: MaterialButton(
                       minWidth: double.infinity,
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const Forgot(),
+                          ),
+                        );
+                      },
                       child: Text('forgot pasword',
-                          style: TextStyle(fontSize: 15)),
+                          style: const TextStyle(fontSize: 15)),
                       color: Colors.grey[300],
                       textColor: Colors.black,
                     ),
                   ),
                   SizedBox(
-                    height: 100,
+                    height: 10,
                   ),
                   Text(
                     "don't have an acount",
@@ -102,7 +111,7 @@ class _MyAopState extends State<Login> {
                     ),
                   ),
                   SizedBox(
-                    height: 100,
+                    height: 10,
                   ),
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 100),
@@ -119,7 +128,7 @@ class _MyAopState extends State<Login> {
                       child: Text(
                         'sign up',
                         style: TextStyle(
-                          fontSize: 15,
+                          fontSize: 20,
                         ),
                       ),
                       color: Colors.grey[300],
