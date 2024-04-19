@@ -73,14 +73,7 @@ class _MyAopState extends State<Login> {
                     padding: const EdgeInsets.symmetric(horizontal: 35),
                     child: MaterialButton(
                       minWidth: double.infinity,
-                      onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => const SignUp(),
-                          ),
-                        );
-                      },
+                      onPressed: () {},
                       child: Text('Login'),
                       color: Colors.grey[300],
                       textColor: Colors.black,
@@ -115,7 +108,14 @@ class _MyAopState extends State<Login> {
                     padding: const EdgeInsets.symmetric(horizontal: 100),
                     child: MaterialButton(
                       minWidth: double.infinity,
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const SignUp(),
+                          ),
+                        );
+                      },
                       child: Text(
                         'sign up',
                         style: TextStyle(

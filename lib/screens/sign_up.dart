@@ -13,11 +13,10 @@ class _MyAoState extends State<SignUp> {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          leading: Icon(Icons.arrow_circle_left_sharp),
-          actions: [
-            IconButton(
-                onPressed: () => {}, icon: Icon(Icons.arrow_circle_left_sharp)),
-          ],
+          leading: IconButton(
+            onPressed: () => {Navigator.pop(context)},
+            icon: Icon(Icons.arrow_circle_left_sharp),
+          ),
           title: Text('Pocket Money Manager'),
         ),
         body: Column(
