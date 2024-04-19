@@ -74,7 +74,12 @@ class _MyAopState extends State<MyAop> {
                     padding: const EdgeInsets.symmetric(horizontal: 35),
                     child: MaterialButton(
                       minWidth: double.infinity,
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => MyAo()),
+                        );
+                      },
                       child: Text('Login'),
                       color: Colors.grey[300],
                       textColor: Colors.black,

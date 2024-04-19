@@ -1,26 +1,24 @@
 import 'package:flutter/material.dart';
 
-class MyAop extends StatefulWidget {
-  const MyAop({super.key});
+class MyAo extends StatefulWidget {
+  const MyAo({super.key});
 
   @override
   _MyAopState createState() => _MyAopState();
 }
 
-class _MyAopState extends State<MyAop> {
+class _MyAopState extends State<MyAo> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-
           leading: Icon(Icons.menu),
           actions: [
-          IconButton(onPressed: () => {}, icon: Icon(Icons.arrow_circle_left_sharp)),
-        ],
+            IconButton(
+                onPressed: () => {}, icon: Icon(Icons.arrow_circle_left_sharp)),
+          ],
           title: Text('Pocket Money Manager'),
-           
-
         ),
         body: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -55,7 +53,9 @@ class _MyAopState extends State<MyAop> {
                       },
                     ),
                   ),
-                  const SizedBox(height: 30,),
+                  const SizedBox(
+                    height: 30,
+                  ),
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 15),
                     child: TextFormField(
