@@ -1,9 +1,9 @@
 #!/bin/sh
 # This is a generated file; do not edit or check into version control.
-export "FLUTTER_ROOT=/Users/matthew/Developer/flutter"
-export "FLUTTER_APPLICATION_PATH=/Users/matthew/Library/CloudStorage/GoogleDrive-matthew@tuttholland.com/Shared drives/TH Projects/pocket-money-manager"
+export "FLUTTER_ROOT=C:\sdk\flutter"
+export "FLUTTER_APPLICATION_PATH=C:\Users\matth\Developer\pocket-money-manager"
 export "COCOAPODS_PARALLEL_CODE_SIGN=true"
-export "FLUTTER_TARGET=lib/main.dart"
+export "FLUTTER_TARGET=lib\main.dart"
 export "FLUTTER_BUILD_DIR=build"
 export "FLUTTER_BUILD_NAME=1.0.1"
 export "FLUTTER_BUILD_NUMBER=1"

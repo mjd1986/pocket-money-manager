@@ -161,13 +161,13 @@
       "name": "pocket_money_manager",
       "rootUri": "../",
       "packageUri": "lib/",
-      "languageVersion": "3.0"
+      "languageVersion": "3.6"
     }
   ],
-  "generated": "2025-01-15T05:23:17.960043Z",
+  "generated": "2025-01-24T00:28:25.606831Z",
   "generator": "pub",
-  "generatorVersion": "3.6.0",
+  "generatorVersion": "3.6.1",
   "flutterRoot": "file:///Users/matthew/Developer/flutter",
-  "flutterVersion": "3.27.1",
+  "flutterVersion": "3.27.2",
   "pubCache": "file:///Users/matthew/.pub-cache"
 }
