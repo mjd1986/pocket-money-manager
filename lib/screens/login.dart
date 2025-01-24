@@ -6,10 +6,10 @@ class Login extends StatefulWidget {
   const Login({Key? key}) : super(key: key);
 
   @override
-  _MyAopState createState() => _MyAopState();
+  LoginState createState() => LoginState();
 }
 
-class _MyAopState extends State<Login> {
+class LoginState extends State<Login> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
